@@ -41,6 +41,7 @@ public class ProductController {
         product.setId(productId);
         Product updateProduct = service.updateProduct(product);
         return new ResponseEntity<>(updateProduct, HttpStatus.OK);
+
     }
 
     @DeleteMapping("/{productId}")
